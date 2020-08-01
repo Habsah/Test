@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\TestApp\\TestApi\\TestApi.csproj": {}
+    "H:\\TestApi\\TestApi.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\TestApp\\TestApi\\TestApi.csproj": {
+    "H:\\TestApi\\TestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\TestApp\\TestApi\\TestApi.csproj",
+        "projectUniqueName": "H:\\TestApi\\TestApi.csproj",
         "projectName": "TestApi",
-        "projectPath": "F:\\Projects\\TestApp\\TestApi\\TestApi.csproj",
+        "projectPath": "H:\\TestApi\\TestApi.csproj",
         "packagesPath": "C:\\Users\\AbdulRahman\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\TestApp\\TestApi\\obj\\",
+        "outputPath": "H:\\TestApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
