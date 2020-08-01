@@ -1,0 +1,17 @@
+<header>
+    <nav class="navbar navbar-light" *ngIf="currentUser">
+        <a id="home" class="navbar-brand" routerLink="/"><i class="fa fa-home"></i>الرئيسية</a>
+        <span class="col-sm-2" id="bgColorSelectContainer">
+            <mat-form-field>
+                <mat-label>لون الخلفية</mat-label>
+                <mat-select (selectionChange)="changeBackgroundColor($event)">
+                    <mat-option value="white">أبيض</mat-option>
+                    <mat-option value="red">أحمر</mat-option>
+                    <mat-option value="blue">أزرق</mat-option>
+                    <mat-option value="yellow">أصفر</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </span>
+        <button mat- class="btn btn-secondary" (click)="logout()">تسجيل الخروج</button>
+    </nav>
+</header>

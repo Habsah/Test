@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    top: 120px;
+}
+
+#addButton {
+    margin-bottom: 10px;
+}
+
+table {
+    background-color: white !important;
+    font-size: medium;
+}
+
+    table .btns-cell {
+        width: 100px;
+    }
+
+    table tr {
+        line-height: 40px !important;
+    }

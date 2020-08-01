@@ -1,0 +1,34 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+nav .container {
+    max-width: unset;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+label {
+    color: white;
+}
+
+nav {
+    background-color: lightgray;
+}
+
+    #home i {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+#bgColorSelectContainer {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+}

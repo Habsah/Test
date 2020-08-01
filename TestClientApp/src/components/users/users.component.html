@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<app-sidebar></app-sidebar>
+
+<div class="container">
+    <button id="addButton" type="button" class="btn btn-success" (click)="openUserForm()">إضافة جديد</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>الاسم</th>
+                <th>العمر</th>
+                <th>تاريخ الميلاد</th>
+                <th>الجنس</th>
+                <th class="btns-cell"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.fullName }}</td>
+                <td>{{ user.age }}</td>
+                <td>{{ user.birthDate | date: 'dd/MM/yyyy' }}</td>
+                <td>{{ user.gender | gender }}</td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-info" (click)="openUserForm(user.id)"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-danger" (click)="deleteUser(user.id)"><i
+                                class="fa fa-trash"></i></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

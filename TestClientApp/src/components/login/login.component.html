@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3 mt-5">
+    <div class="card">
+        <h4 class="card-header">تسجيل الدخول</h4>
+        <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <mat-form-field>
+                        <mat-label>اسم المستخدم</mat-label>
+                        <input matInput type="text" formControlName="username" placeholder="Test" [ngClass]="{ 'is-invalid': submitted && form.username.errors }" />
+                        <div *ngIf="submitted && form.username.errors" class="invalid-feedback">
+                            <div *ngIf="form.username.errors.required">يرجى إدخال اسم المستخدم</div>
+                        </div>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field>
+                        <mat-label>كلمة المرور</mat-label>
+                        <input matInput type="password" formControlName="password"  placeholder="Test$123" [ngClass]="{ 'is-invalid': submitted && form.password.errors }" />
+                        <div *ngIf="submitted && form.password.errors" class="invalid-feedback">
+                            <div *ngIf="form.password.errors.required">يرجى إدخال كلمة المرور</div>
+                        </div>
+                    </mat-form-field>
+                </div>
+                <button [disabled]="loading" class="btn btn-primary">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    دخول
+                </button>
+                <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+            </form>
+        </div>
+    </div>
+</div>

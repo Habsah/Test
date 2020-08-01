@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.white-background {
+  background-color: white !important;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.blue-background {
+  background-color: blue;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+mat-form-field {
+  width: 100% !important;
+}
+
+  mat-form-field input {
+    height: -webkit-fill-available !important;
+  }
+
+mat-label, .mat-form-field-wrapper {
+  line-height: normal !important;
+}
+
+.mat-form-field-wrapper {
+  height: 65px !important;
+}
