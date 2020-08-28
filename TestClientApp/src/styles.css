@@ -9,22 +9,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.white-background {
-  background-color: white !important;
-}
-
-.red-background {
-  background-color: red;
-}
-
-.blue-background {
-  background-color: blue;
-}
-
-.yellow-background {
-  background-color: yellow;
-}
-
 mat-form-field {
   width: 100% !important;
 }

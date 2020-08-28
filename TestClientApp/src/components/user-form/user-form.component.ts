@@ -50,7 +50,6 @@ export class UserFormComponent implements OnInit {
               this.userForm.controls.fullname.setValue(user.fullName);
               this.userForm.controls.age.setValue(user.age);
               this.userForm.controls.gender.setValue(user.gender);
-              this.setGenderTextManually();
               this.userForm.controls.birthDate.setValue(this.parseDateToNgbDate(user.birthDate));
             },
             error => {
@@ -138,18 +137,5 @@ export class UserFormComponent implements OnInit {
     if (ngbDate != null) {
       return new Date(Date.UTC(ngbDate.year, ngbDate.month - 1, ngbDate.day));
     }
-  }
-
-  setGenderTextManually($event?) {
-    let gender;
-    if ($event)
-      gender = $event.value;
-    else
-      gender = this.form.gender.value;
-
-    if (gender == Gender.male)
-      $('#genderSelect .mat-select-value-text span').html("ذكر");
-    if (gender == Gender.female)
-      $('#genderSelect .mat-select-value-text span').html("أنثى");
   }
 }

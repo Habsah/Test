@@ -19,22 +19,8 @@ export class HeaderComponent implements OnInit {
   }
 
   changeBackgroundColor($event) {
-    let backgroundColorsClasses = ['white-background', 'red-background', 'blue-background', 'yellow-background'];
-    let selectedBackgroundColorClass = '';
     let selectedColor = $event.value;
-    if (selectedColor == 'white')
-      selectedBackgroundColorClass = 'white-background';
-    if (selectedColor == 'red')
-      selectedBackgroundColorClass = 'red-background';
-    else if (selectedColor == 'blue')
-      selectedBackgroundColorClass = 'blue-background';
-    else if (selectedColor == 'yellow')
-      selectedBackgroundColorClass = 'yellow-background';
-
-    for (let color of backgroundColorsClasses) {
-      $("#appContainer").removeClass(color);
-    }
-    $("#appContainer").addClass(selectedBackgroundColorClass);
+    document.body.style.setProperty('--bg-color',selectedColor);
   }
 
   logout() {

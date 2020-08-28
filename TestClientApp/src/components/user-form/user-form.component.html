@@ -39,7 +39,7 @@
         <div class="form-group">
             <mat-form-field>
                 <mat-label>الجنس</mat-label>
-                <mat-select id="genderSelect" formControlName="gender" (selectionChange)="setGenderTextManually($event)">
+                    <mat-select id="genderSelect" formControlName="gender">
                     <mat-option *ngFor="let gender of genders" [value]="gender.value">
                         {{ gender.text }}
                     </mat-option>
